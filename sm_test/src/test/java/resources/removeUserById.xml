@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="removeUserById">
+    <test name="根据id删除用户">
+        <parameter name="id" value="3"></parameter>
+        <classes>
+            <class name="apis.RemoveUserById"></class>
+        </classes>
+    </test>
+    <!-- 设置监听器 ,运行testng.xml在test-ouput里面生成html格式的报告，邮件用浏览器打开即可看结果-->
+    <listeners>
+        <listener class-name="config.ExtentTestNGIReporterListener"></listener>
+    </listeners>
+</suite>

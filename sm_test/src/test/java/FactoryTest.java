@@ -1,0 +1,17 @@
+import apis.*;
+import org.testng.annotations.Factory;
+
+/**
+ * Created by zhangyali on 2019/7/16.
+ */
+public class FactoryTest {
+//    实现testng批量运行所有测试用例,使用工厂@Factory类实现
+    @Factory()
+    public Object[] FactoryTest(){
+        return new Object[]{
+//                批量运行
+                new FindUser(),
+                new FindUserJson()
+        };
+    }
+}

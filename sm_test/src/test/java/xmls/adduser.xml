@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="addUserCase">
+    <test name="adduser">
+        <parameter name="userName" value="沙和尚"></parameter>
+        <parameter name="password" value="yes"></parameter>
+        <classes>
+            <class name="apis.AddUser"></class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+    </listeners>
+</suite>
